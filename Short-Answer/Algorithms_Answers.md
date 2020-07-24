@@ -42,7 +42,27 @@ c)  def bunnyEars(bunnies):
       return 2 + bunnyEars(bunnies-1)
     # Total time complexity = O(1) + O(n) = O(n)
 '''
-    
+
 ## Exercise II
+
+If we think of the building floors as a sorted array we can implement a binery search tree
+Runtime complexity = O(log n)
+
+0. Initialize the minimum floor to 1 
+    0a. Set the max floor to n 
+
+1. Set 'f' as (min_floor + max_floor)//2 round down if not an int to get the middle floor
+2. Go to the f floor (middle)
+3. Drop an egg 
+4. if the egg breaks:
+    4a. go 1 floor below and drop an egg
+    4b. if the egg doesnt break, return f
+    4c. if the egg breaks we're too high , set the max -> f
+    4d. go back to step 1 
+5. otherwise (The egg doesnt break):
+    5a. go one floor up and drop an egg
+    5b. if the egg breaks, return f 
+    5c. if the egg doesnt break we're too low, set the min -> f+1 
+    5d. Go back to step 1
 
 
