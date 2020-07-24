@@ -57,12 +57,12 @@ Runtime complexity = O(log n)
 4. if the egg breaks:
     4a. go 1 floor below and drop an egg
     4b. if the egg doesnt break, return f
-    4c. if the egg breaks we're too high , set the max -> f
+    4c. if the egg breaks we're too high , set the max floor to f
     4d. go back to step 1 
 5. otherwise (The egg doesnt break):
     5a. go one floor up and drop an egg
     5b. if the egg breaks, return f 
-    5c. if the egg doesnt break we're too low, set the min -> f+1 
+    5c. if the egg doesnt break we're too low, set the min floor to f+1 
     5d. Go back to step 1
 
 
